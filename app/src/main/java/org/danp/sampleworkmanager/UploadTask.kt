@@ -14,7 +14,7 @@ class UploadTask(context: Context, workerParams: WorkerParameters) :
         return Result.success()
     }
 
-    private fun upload():Unit{
+    private fun upload(): Unit {
         Log.d(TAG, "UploadTask")
     }
 

@@ -22,7 +22,8 @@ class MainActivity : AppCompatActivity() {
             val downloadTaskRequest = OneTimeWorkRequestBuilder<DownloadTask>().build()
 //            WorkManager.getInstance(this)
 //                .enqueue(Arrays.asList(uploadTaskRequest, downloadTaskRequest))
-            WorkManager.getInstance(this).beginWith(downloadTaskRequest).then(uploadTaskRequest).enqueue()
+            WorkManager.getInstance(this).beginWith(downloadTaskRequest).then(uploadTaskRequest)
+                .enqueue()
 //            WorkManager.getInstance(this)
 //                .enqueue(uploadTaskRequest)
 
